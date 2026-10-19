@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#2 SKRI (Saluran perKeretaapian Railfans Indonesia)</title>
+    <style>
+        .galeri-horizontal {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .kontainer-kereta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 25px;
+            width: 190px;
+            cursor: pointer;
+        }
+
+        .teks-atas, .teks-bawah {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .teks-atas {
+            margin-bottom: 8px;
+            transform: translateY(5px);
+        }
+
+        .teks-bawah {
+            margin-top: 8px;
+            transform: translateY(-5px);
+        }
+
+        .kontainer-kereta:hover .teks-atas,
+        .kontainer-kereta:hover .teks-bawah {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+        <!--propil kereta
+
+    <h2>Profil Saya</h2>
+
+        <p>Selamat datang di website saya. Perkenalkan, saya <b>Dhimas Pramudya Adhyasa</b>, 
+           seorang <u>siswa SMK Yadika 13</u> yang memiliki ketertarikan dalam pengembangan 
+           website dan pemrograman. Melalui website ini saya bisa membagikan seluruh 
+           <i>informasi persensusan kereta api dari Daop 1 sampai 6</i>. Saya pastikan website 
+           ini akan menjadi informasi yang lebih akurat untuk para railfans disana. Saya ucapkan
+           Terimakasih yang sebesar-besarnya karena sudah mempercayai website SKRI ini.
+        </p>
+    
+    <hr>
+    <h2>Identitas Saya</h2>
+    
+    <br> <b>From</b>
+    <p style="font-weight: bold; font-size: 24px;">
+        <span style="color: blue;">K</span>
+        <span style="color: darkorange;">A</span>
+        <span style="color: blue;">I</span>
+        <span style="color: darkorange;">1</span>
+        <span style="color: blue;">2</span>
+        <span style="color: darkorange;">1</span>
+    </p>
+     -->
+        <!--Nama saya
+    <br>Nama Lengkap: Dhimas Pramudya Adhyasa </br>
+    <br>Kelas       : XI TKJ 1 </br>
+    <br>Sekolah     : SMK YADIKA 13 </br>
+-->
+    <hr>
+    <h2>Hasil Lintas Seluruh Daop (D1-6)</h2>
+    <h3>Daop 1 E.H</h3>
+        <!--Contoh Gambar-->
+    <div class="galeri-horizontal">
+     <br> <div class="kontainer-kereta">
+            <span class="teks-atas">CC 204 03 07 PWT - KA 284/285 Serayu</span>
+            <img src="2040307PWT.webp" alt="Kereta" width="200">
+            <span class="teks-bawah">
+                + P 0 18 31 KTG (PWT-KYA)</span>
+         </div>
+         <!--PASTIKAN GAMBAR SESUAI SAMA SEBELAHNYA DAN ATUR WIDTH-->
+     <br> <div class="kontainer-kereta">
+            <span class="teks-atas">CC 204 03 01 YK - KA 103B Bogowonto</span>
+            <img src="file:///C:/Users/LAB%203/Desktop/Dhimas%20Pramudya%20XI%20TKJ%201/my%20my%20WnB%20%232.jpeg" alt="Kereta" width="220">
+            <span class="teks-bawah">
+                + P 0 25 21 SLO (LPN-PSE)</span>
+         </div>
+     <br> <div class="kontainer-kereta">
+            <span class="teks-atas">CC 201 92 01 JR - KA 282 Bengawan</span>
+            <img src="2019201CPN.webp" alt="Kereta" width="190">
+            <span class="teks-bawah">
+                set: MP1 0 14 17 JAKK</span>
+         </div>
+     <br> <div class="kontainer-kereta">
+            <span class="teks-atas">CC 201 89 12 SDT - Kp/11426 Gajayana Extra</span>
+            <img src="C:\Users\LAB 3\Downloads\RnB2018912SDT.jpeg" alt="Kereta" width="225">
+            <span class="teks-bawah">
+                set: M1 0 09 14 JAKK</span>
+         </div>
+    </div>
+
+    <hr>
+    <h3>Daop 2 H.I</h3>
+        <!--Contoh Sensus KA-->
+    <br>CC 203 95 01 YK - KA 274/273 Kahuripan
+    <br> CC 201 83 16 BD - KA 385 Commuter Line Bandung Raya
+    <br> CC 201 83 25 BD - KA 376 Commuter Line Bandung Raya
+    <br> CC 206 13 28 PWT - KA 142B/142F Parahyangan Fakultatif
+
+    <hr>
+    <!--Nama-nama stasiun Daop 1-3-->
+    <h2>Daftar Istilah Nama-Nama Stasiun:</h2>
+    <dl>
+        <dt>Gambir</dt>
+        <dd><img src="C:\Users\LAB 3\Downloads\Stasiun-Gambir-Ikon-Transportasi-Jakarta.jpg" width="190">
+            <br>Stasiun Gambir merupakan stasiun kelas II yang menyediakan naik turun penumpang dengan KA kasta
+            tertinggi
+        </dd>
+        <br>
+        <dt>Pasar Senen</dt>
+        <dd><img src="C:\Users\LAB 3\Downloads\Stasiun Pasar Senen.jpeg" width="190">
+            <br>Stasiun Pasar senen merupakan stasiun kelas III yang menyediakan naik turun penumpang dengan harga 
+            yang relatif murah
+        </dd>
+        <br>
+        <dt>Bandung</dt>
+        <dd><img src="C:\Users\LAB 3\Downloads\Stasiun Bandung.webp" width="190"> 
+            <br>Stasiun Bandung merupakan stasiun yang melayani berbagai jenis KA, seperti KAJJ, lokal Garut
+            atau lokal BaRaya agar bisa bersambung ke stasiun KCIC
+        </dd>
+        <br>
+        <dt>Cirebon</dt>
+        <dd><img src="C:\Users\LAB 3\Downloads\Stasiun Cirebon.webp" width="190">
+            <br>Stasiun Cirebon merupakan stasiun yang melayani naik turun penumpang dan juga sebagai angkutan
+            barang
+        </dd>
+    </dl>
+
+</body>
+</html>

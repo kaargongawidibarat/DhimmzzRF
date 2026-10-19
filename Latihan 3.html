@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran PT Kereta Api Indonesia</title>
+    <link rel="stylesheet" href="Latihan3.css">
+</head>
+<body>
+    
+    <!-- Wadah Utama di Tengah Layar -->
+    <div class="main-wrapper">
+        
+        <!-- Logo PT KAI di Luar/Atas Kotak -->
+        <div class="logo-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Logo_PT_Kereta_Api_Indonesia_%28Persero%29_2020.svg" alt="Logo PT KAI">
+        </div>
+
+        <!-- Kotak Formulir Pendaftaran -->
+        <div class="form-card">
+            <h2>Formulir Pendaftaran PT KAI</h2>
+            
+            <form action="#" method="POST">
+                
+                <div class="input-group">
+                    <label for="nisn">NISN:</label>
+                    <input type="text" id="nisn" name="nisn" placeholder="Masukkan NISN" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="kelas">Kelas:</label>
+                    <select id="kelas" name="kelas" required>
+                        <option value="">-- Pilih Kelas --</option>
+                        <option value="X">X</option>
+                        <option value="XI">XI</option>
+                        <option value="XII">XII</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Jurusan:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="kondektur" name="jurusan" value="Kondektur">
+                            <label for="kondektur">Kondektur</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="masinis" name="jurusan" value="Masinis">
+                            <label for="masinis">Masinis</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="ppka" name="jurusan" value="PPKA">
+                            <label for="ppka">PPKA</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="polsuska" name="jurusan" value="Polsuska">
+                            <label for="polsuska">Polsuska</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="tempat">Tempat, Tanggal Lahir:</label>
+                    <div class="birth-group">
+                        <input type="text" id="tempat" name="tempat" placeholder="Tempat Lahir" required>
+                        <input type="date" id="tanggal" name="tanggal" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Jenis Kelamin:</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="laki" name="gender" value="Laki-laki">
+                            <label for="laki">Laki-laki</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="alamat">Alamat:</label>
+                    <input type="text" id="alamat" name="alamat" placeholder="Masukkan Alamat" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Pendaftaran</button>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
